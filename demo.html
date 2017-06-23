@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<p class="status">报名中</p>
+		<p class="status">报名l</p>
+		<p class="status">报名2</p>
+		<p class="status">报名3</p>
+		<p class="status">报名4</p>
+		<script src="lib/easyUI/jquery-1.7.2.js"></script>
+		<script type="text/javascript">
+			var data=$('p')
+			$.each(data, function(k,v) {
+				console.log($(this));
+				console.log(v.status);
+			});
+		</script>
+	</body>
+</html>

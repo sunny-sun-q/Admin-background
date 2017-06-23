@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.datagrid-wrap {
+				top: 70px;
+				bottom:0;
+				/*border-top: 1px solid #ccc;*/
+			}
+		</style>
+		<link rel="stylesheet" href="lib/easyUI/themes/deault/easyui.css" />
+		<link rel="stylesheet" type="text/css" href="lib/easyUI/themes/icon.css" />
+		<link rel="stylesheet" href="lib/easyUI/demo.css" />
+		<script src="lib/jquery-1.7.2.js"></script>
+		<script src="lib/easyUI/jquery.easyui.min.js"></script>
+	</head>
+
+	<body>
+		<table id="tt" title="操作日志" class="easyui-datagrid" style="width:100%;height: 520px;" url="datagrid_data.json" idField="itemid" pagination="true" rownumbers="true">
+			<thead>
+				<tr>
+					<th field="ck" checkbox="true"></th>
+					<th field="itemid" width="80" align="center">操作人姓名</th>
+					<th field="productid" width="80" align="center">操作内容</th>
+					<th field="listprice" width="80" align="center">操作板块</th>
+					<th field="listprice" width="80" align="center">操作参数</th>
+					<th field="unitcost" width="80" align="center">操作时间</th>
+				</tr>
+			</thead>
+		</table>
+		<div id="tb" style="position: absolute;top: 30px;margin-bottom: 5px;">
+			开始时间: <input class="ss" style="width:80px;"> 结束时间: <input class="ss" style="width:80px;">
+				操作人姓名: <input type="text" style="width:80px;">
+					操作人内容: <input type="text" style="width:80px;">
+			操作板块:
+			<select class="easyui-combobox" panelHeight="auto" style="width:100px">
+				<option value="全部">全部</option>
+				<option value="1级">1级</option>
+				<option value="2级">2级</option>
+				<option value="3级">3级</option>
+			</select>
+			<a href="#" class="easyui-linkbutton" iconCls="icon-search">Search</a>
+		</div>
+		<script>
+			$('.ss').timespinner({
+				min: '08:30',
+				required: true,
+				showSeconds: true
+			});
+		</script>
+		<script type="text/javascript">
+		</script>
+	</body>
+
+</html>

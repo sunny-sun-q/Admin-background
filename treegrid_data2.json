@@ -1,0 +1,6 @@
+{"total":7,"rows":[
+	{"id":1,"name":"系统管理员","begin":"3/4/2010","end":"3/20/2010"},
+	{"id":2,"name":"系统功能","begin":"3/4/2010","end":"3/10/2010","_parentId":1}
+],"footer":[
+	{"name":"Total Persons:","persons":7,"iconCls":"icon-sum"}
+]}

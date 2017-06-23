@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.datagrid-wrap {
+				top: 40px;
+				bottom:0;
+				/*border-top: 1px solid #ccc;*/
+			}
+		</style>
+		<link rel="stylesheet" href="lib/easyUI/themes/deault/easyui.css" />
+		<link rel="stylesheet" type="text/css" href="lib/easyUI/themes/icon.css" />
+		<link rel="stylesheet" href="lib/easyUI/demo.css" />
+		<script src="lib/jquery-1.7.2.js"></script>
+		<script src="lib/easyUI/jquery.easyui.min.js"></script>
+	</head>
+
+	<body>
+		<table id="tt" title="敏感词管理" class="easyui-datagrid" style="width:100%;height: 520px;" url="datagrid_data.json" idField="itemid" pagination="true" rownumbers="true">
+			<thead>
+				<tr>
+					<th field="ck" checkbox="true"></th>
+					<th field="itemid" width="80" align="center">敏感词</th>
+					<th field="productid" width="80" align="center">描述</th>
+				</tr>
+			</thead>
+		</table>
+		<div id="tb" style="position: absolute;top: 30px;margin-bottom: 5px;">
+			<div style="padding: 5px 0;">
+				<a id="btn" href="#" class="easyui-linkbutton" style="background-color: rgba(135, 238, 135, 0.97);">新建</a>
+				<a id="btn" href="#" class="easyui-linkbutton" style="background-color: rgba(135, 238, 135, 0.97);">编辑</a>
+				<a id="btn" href="#" class="easyui-linkbutton" style="background-color: rgba(135, 238, 135, 0.97);">删除</a>
+			</div>
+		</div>
+		<script>
+			$('.ss').timespinner({
+				min: '08:30',
+				required: true,
+				showSeconds: true
+			});
+		</script>
+		<script type="text/javascript">
+		</script>
+	</body>
+
+</html>
